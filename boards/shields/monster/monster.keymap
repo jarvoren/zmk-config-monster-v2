@@ -1,0 +1,68 @@
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+/ {
+        keymap {
+                compatible = "zmk,keymap";
+
+                default_layer {
+// -----------------------------------------------------------------------------------------
+// | ESC  | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10 | F11 | F12 | Layer1 | Layer2 | Layer3 |
+// |  `   |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  | INS    | HOM    | PGUP   |
+// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  | Del    | END    | PGDN   |
+// |MAKRO |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |  \  |        |        |        |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |     |SHIFT|        |   UP   |        |
+// | CTRL |SYST |ALT  |SPACE|CTRL |SWLAY|SWLAY|ENTER|BCSPC|     |ALT  | CMD | OPT |  LEFT  |  DOWN  |  RIGHT |
+                        
+                        bindings = <
+&kp ESC     &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12     &tog 0      &tog 1      &tog 2
+&kp GRAVE   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS   &kp EQUAL   &kp INS     &kp HOME    &kp PG_UP
+&kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P       &kp LBKT    &kp RBKT    &kp DEL     &kp END     &kp PG_DN
+&none       &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT     &kp BSLH    &none       &none       &none
+&kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT   &kp RSHFT   &none       &kp UP      &none
+&kp LCTRL   &kp LGUI    &kp LALT    &kp SPC     &kp LCTRL   &mo 2       &mo 3       &kp ENTER   &kp BSPC    &none       &kp RALT    &none       &kp RGUI    &kp LEFT    &kp DOWN    &kp RIGHT
+
+                        >;
+                };
+                lower_layer {
+// -----------------------------------------------------------------------------------------
+// |BT_CLR|BT_SEL|BT_SEL|BT_SEL|BT_SEL| F5  | F6  | F7  | F8  | F9  | F10 | F11 | F12 | Layer1 | Layer2 | Layer3 |
+// |  `   |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  | INS    | HOM    | PGUP   |
+// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  | Del    | END    | PGDN   |
+// |MAKRO |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |  \  |        |        |        |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |     |SHIFT|        |   UP   |        |
+// | CTRL |SYST |ALT  |SPACE|CTRL |SWLAY|SWLAY|ENTER|BCSPC|     |ALT  | CMD | OPT |  LEFT  |  DOWN  |  RIGHT |
+                        
+                        bindings = <
+&bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp F5      &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12     &tog 0      &tog 1      &tog 2
+&kp GRAVE   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS   &kp EQUAL   &kp INS     &kp HOME    &kp PG_UP
+&kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P       &kp LBKT    &kp RBKT    &kp DEL     &kp END     &kp PG_DN
+&none       &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT     &kp BSLH    &none       &none       &none
+&kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT   &kp RSHFT   &none       &kp UP      &none
+&kp LCTRL   &kp LGUI    &kp LALT    &kp SPC     &kp LCTRL   &mo 2       &mo 3       &kp ENTER   &kp BSPC    &none       &kp RALT    &none       &kp RGUI    &kp LEFT    &kp DOWN    &kp RIGHT
+
+                        >;
+                };
+
+                raise_layer {
+// -----------------------------------------------------------------------------------------
+// | ESC  | F1  | F2  | F3  | F4  | F5  | F6  | F7  | F8  | F9  | F10 | F11 | F12 | Layer1 | Layer2 | Layer3 |
+// |  `   |  1  |  2  |  3  |  4  |  5  |  6  |  7  |  8  |  9  |  0  |  -  |  =  | INS    | HOM    | PGUP   |
+// | TAB  |  Q  |  W  |  E  |  R  |  T  |  Y  |  U  |  I  |  O  |  P  |  [  |  ]  | Del    | END    | PGDN   |
+// |MAKRO |  A  |  S  |  D  |  F  |  G  |  H  |  J  |  K  |  L  |  ;  |  '  |  \  |        |        |        |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |  N  |  M  |  ,  |  .  |  /  |     |SHIFT|        |   UP   |        |
+// | CTRL |SYST |ALT  |SPACE|CTRL |SWLAY|SWLAY|ENTER|BCSPC|     |ALT  | CMD | OPT |  LEFT  |  DOWN  |  RIGHT |
+                        
+                        bindings = <
+&kp ESC     &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12     &tog 0      &tog 1      &tog 2
+&kp GRAVE   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp KP_N7   &kp KP_N8   &kp KP_N9   &kp INS     &kp HOME    &kp PG_UP
+&kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp KP_N4   &kp KP_N5   &kp KP_N6   &kp DEL     &kp END     &kp PG_DN
+&none       &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L       &kp KP_N1   &kp KP_N2   &kp KP_N3   &none       &none       &none
+&kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp KP_N0   &kp RSHFT   &none       &kp UP      &none
+&kp LCTRL   &kp LGUI    &kp LALT    &kp SPC     &kp LCTRL   &mo 2       &mo 3       &kp ENTER   &kp BSPC    &none       &kp RALT    &none       &kp RGUI    &kp LEFT    &kp DOWN    &kp RIGHT
+                        >;
+                };
+        };
+};

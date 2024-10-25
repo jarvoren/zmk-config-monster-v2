@@ -1,0 +1,10 @@
+file_format: "1"
+id: monster
+name: Monster
+type: shield
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - monster_left
+  - monster_right
