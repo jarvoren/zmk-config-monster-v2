@@ -16,7 +16,8 @@
 &none       &kp A       &kp S       &kp D       &kp F       &kp G       &kp Z       &kp X                   &kp N6       &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT     &kp BSLH   &kp ENTER   &kp U       &kp U       &kp U
 &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp C       &kp V                   &kp Q        &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT   &kp RSHFT  &none       &kp V       &kp UP      &kp M
 &none       &kp LGUI    &none       &kp LALT    &none       &kp SPC     &kp LCTRL   &kp LCTRL               &kp W        &kp F       &kp ENTER   &kp RALT    &none       &kp L       &kp N0      &none      &none       &kp LEFT    &kp DOWN    &kp RIGHT
-                                                                                                                         &kp B 
+&none       &none       &none       &none       &none       &none       &none       &none                   &none        &none       &none       &none       &none       &none       &none       &none      &none       &none       &none       &none
+
                         >;
                 };
                 lower_layer {
@@ -26,10 +27,9 @@
 &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp Q       &kp W                   &kp N2       &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS   &kp EQUAL  &kp BSPC    &kp INS     &kp HOME    &kp PG_UP
 &kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T       &kp A       &kp S                   &kp N4       &kp Y       &kp U       &kp I       &kp O       &kp P       &kp LBKT    &kp RBKT   &none       &kp DEL     &kp END     &kp PG_DN
 &none       &kp A       &kp S       &kp D       &kp F       &kp G       &kp Z       &kp X                   &kp N6       &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT     &kp BSLH   &kp ENTER   &kp U       &kp U       &kp U
-&kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp C       &kp V                   &kp Q        &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT   &kp RSHFT  &none       &none       &kp UP      &none
+&kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp C       &kp V                   &kp Q        &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT   &kp RSHFT  &none       &kp V       &kp UP      &kp M
 &none       &kp LGUI    &none       &kp LALT    &none       &kp SPC     &kp LCTRL   &kp LCTRL               &kp W        &kp F       &kp ENTER   &kp RALT    &none       &kp L       &kp N0      &none      &none       &kp LEFT    &kp DOWN    &kp RIGHT
-               
-                        >;
+&none       &none       &none       &none       &none       &none       &none       &none                   &none        &none       &none       &none       &none       &none       &none       &none      &none       &none       &none       &none                        >;
                 };
 
                 raise_layer {
@@ -39,9 +39,9 @@
 &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp Q       &kp W                   &kp N2       &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp MINUS   &kp EQUAL  &kp BSPC    &kp INS     &kp HOME    &kp PG_UP
 &kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T       &kp A       &kp S                   &kp N4       &kp Y       &kp U       &kp I       &kp O       &kp P       &kp LBKT    &kp RBKT   &none       &kp DEL     &kp END     &kp PG_DN
 &none       &kp A       &kp S       &kp D       &kp F       &kp G       &kp Z       &kp X                   &kp N6       &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp SQT     &kp BSLH   &kp ENTER   &kp U       &kp U       &kp U
-&kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp C       &kp V                   &kp Q        &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT   &kp RSHFT  &none       &none       &kp UP      &none
+&kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp C       &kp V                   &kp Q        &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT   &kp RSHFT  &none       &kp V       &kp UP      &kp M
 &none       &kp LGUI    &none       &kp LALT    &none       &kp SPC     &kp LCTRL   &kp LCTRL               &kp W        &kp F       &kp ENTER   &kp RALT    &none       &kp L       &kp N0      &none      &none       &kp LEFT    &kp DOWN    &kp RIGHT
-               
+&none       &none       &none       &none       &none       &none       &none       &none                   &none        &none       &none       &none       &none       &none       &none       &none      &none       &none       &none       &none               
                         >;
                 };
         };
