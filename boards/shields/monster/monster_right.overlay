@@ -2,7 +2,7 @@
 
 
 &default_transform { 
-    col-offset = <10>;
+    col-offset = <8>;
 };
 
 &kscan0 {
